@@ -3,7 +3,7 @@ first, to produce the war file in the "target" dir. And then check it in, and th
 
 ```
 oc new-app --name=simple https://github.com/kstephen314159/simple-stuff.git
-oc new-app --name=simple https://github.com/kstephen314159/simple-stuff.git
+oc expose svc simple
 ```
 
 And then, `curl -v http://<hostname for route>/simple-stuff/simple/simon`
